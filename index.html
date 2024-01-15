@@ -8,24 +8,31 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body id="body">
-
-<div class="navwithhdr">
+<body id="home">
     <header>
         <h1 class="hh1">Entrepreneurs from CWB Myanmar</h1>
     </header>
-    <div style="text-align: center; margin: 0;">
+    <div class="navhdr" style="text-align: center; margin: 0;">
         <nav>
-            <a href="#" onclick="changeBodySection('one4one')">One4One</a>
-            <a href="#" onclick="changeBodySection('phoomyat')">Knitting with Phoo</a>
-            <a href="#" onclick="changeBodySection('minishin')">Mini Shin</a>
-            <a href="#" onclick="changeBodySection('t-home')">Trust-Home</a>
-            <a href="#" onclick="changeBodySection('body')">Home</a>
+            <li>
+            <a class="titleA" href="#one4one" onclick="changeBodySection('one4one'),changeActive(this)   ">One4One</a>
+            </li>
+            
+            <li>
+            <a class="titleA" href="#phoomyat" onclick="changeBodySection('phoomyat'),changeActive(this) ">Knitting with Phoo</a>
+            </li>
+
+            <li>
+            <a class="titleA" href="#minishin" onclick="changeBodySection('minishin'),changeActive(this)">Mini Shin</a>
+            </li>
+
+            <li>
+            <a class="titleA" href="#t-home" onclick="changeBodySection('t-home'),changeActive(this)">Trust-Home</a>
+            </li>
         </nav>
     </div>
-    
-</div>
 
+<!-- All categories start here! -->
 
 <section id="one4one" class="hidden">
         <h2>Featured Products</h2>
@@ -46,6 +53,7 @@
     <p>This is the content of Category 1.</p>
     <!-- Add content for Category 1 as needed -->
 </section>
+<!-- One4One Section end -->
 
 <section id="phoomyat" class="hidden">
     <h1>Knitting with Phoo</h1>
@@ -53,12 +61,15 @@
     <!-- Add content for Category 2 as needed -->
 </section>
 
+<!-- Phoo Section End -->
+
 <section id="minishin" class="hidden">
     <h1>Mini Shin</h1>
     <p>This is the content of Category 3.</p>
     <!-- Add content for Category 3 as needed -->
 </section>
 
+<!-- Minishin Section End -->
 <section id="t-home" class="hidden">
     <h1>Trust-Home</h1>
     <p>This is the content of Category 4.</p>
@@ -66,18 +77,69 @@
     <!-- Add content for Category 4 as needed -->
 </section>
 
+<!-- t-home section End -->
+
+
+
 <!-- Home Page start from this -->
-<div style="height: 2000px;">
+<section id="hidden_homepage" class="">
+
+<div style="height: 200px; color: blue;">
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perspiciatis aspernatur numquam eaque voluptatibus dolor eos architecto labore dolore iusto, ut inventore. Ipsa aperiam reiciendis quis sint accusamus rerum laborum?
 </div>
 
+<section class="H-one4one">
+    <h3>One4One(ShopwithImapact)</h3><br>
+    <div style="display: inline-flex; text-decoration: none;">
+        <img src="img/home page/one4one3.jpg" alt="one4one" width="300" height="300">
+        <div>
+            <p style="  text-align: justify; padding: 4px 20px; color: black;">About One4One,
+            One4One is an online platform dedicated to fostering inclusivity and
+            empowerment for people with disabilities (PWDs) and ethnic minorities.
+            Our platform serves as a bridge, connecting PWDs and the public through
+            the awareness content and the promoting of locally crafted clothing madeby
+            PWDs and the fabric sources from ethnic minorities. We aim to breakthe
+            stereotypesand create an environment where diversity is respected and celebrated.
+            </p>
+            <div>
+                <button class="a141" onclick="changeBodySection('one4one')" >See more..</button>
+            </div>
+        </div>
+    </div>
+
+    </a>
+</section>   
+<br><br>
+
+<section class="H-phoomyat">
+    <h3>Knitting with Phoo</h3><br>
+    <div style="display: inline-flex; text-decoration: none;">
+       
+        <div>
+            <p style="  text-align: justify; padding: 4px 20px; color: black;">About One4One,
+            One4One is an online platform dedicated to fostering inclusivity and
+            empowerment for people with disabilities (PWDs) and ethnic minorities.
+            Our platform serves as a bridge, connecting PWDs and the public through
+            the awareness content and the promoting of locally crafted clothing madeby
+            PWDs and the fabric sources from ethnic minorities. We aim to breakthe
+            stereotypesand create an environment where diversity is respected and celebrated.
+            </p>
+            <div>
+                <button class="apm" onclick="changeBodySection('phoomyat')" >See more..</button>
+            </div>
+        </div>
+        <img src="img/home page/one4one3.jpg" alt="one4one" width="300" height="300">
+    </div>
+</section> 
+<br><br>
+</section> <!-- </section> this is home page section for ending/ not showing home page section (hidden-homepage) -->
 
 
 <footer>
     <p>&copy; 2024 CWB Myanmar. All rights reserved.</p>
 </footer>
 
-<!-- Homae Page end  -->
+<!-- Whole Page end  -->
 
 </body>
 </html>

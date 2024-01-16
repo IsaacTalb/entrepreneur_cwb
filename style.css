@@ -163,15 +163,15 @@ section {
 }
 
 .dresscode1{
-    max-width: 10%; 
-    height: 40%; 
+    max-width: 20%; 
+    height: 50%; 
     padding: 6px 2px;
     display: inline-flex;
     
 }
 .dresscode2 {
-    max-width: 10%; 
-    height: 40%; 
+    max-width: 20%; 
+    height: 50%; 
     padding: 6px 2px;
     display: inline-flex;
 

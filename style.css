@@ -143,6 +143,7 @@ section {
     background-color: #020a0c;
     border-color: #020a0c;
     color: #fff;
+    text-align: justify;
 }
 
 .H-one4one {
@@ -173,4 +174,22 @@ section {
     height: 40%; 
     padding: 6px 2px;
     display: inline-flex;
+
+}
+.W-phoo{
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+    margin: 6px;
+    padding: 8px;
+    border-radius: 9px; 
+}
+
+.W-one4one{
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+    margin: 6px;
+    border-radius: 9px;
+    padding: 10px 20px;
 }

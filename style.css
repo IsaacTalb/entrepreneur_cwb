@@ -160,3 +160,11 @@ section {
     margin: 6px;
     border-radius: 9px;
 }
+
+.dresscode1{
+    max-width: 10%; 
+    height: 40%; 
+    padding: 6px 2px;
+    display: inline-flex;
+    
+}

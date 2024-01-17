@@ -136,7 +136,7 @@ section {
     float: inline-start;
     margin: 20px;
     background-color: #5a0808;
-    border-color: #fff;
+    border-color: #111111;
 }
 
 .a141.apm:hover{
@@ -162,6 +162,13 @@ section {
     border-radius: 9px;
 }
 .H-shinn{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(188, 223, 223);
+    margin: 6px;
+    border-radius: 9px;
+}
+.H-Trust {
     justify-content: center;
     text-align: center;
     background-color: rgb(188, 223, 223);

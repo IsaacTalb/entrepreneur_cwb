@@ -165,14 +165,14 @@ section {
 .dresscode1{
     max-width: 20%; 
     height: 50%; 
-    padding: 6px 2px;
+    padding: 6px 4px;
     display: inline-flex;
     
 }
 .dresscode2 {
     max-width: 20%; 
     height: 50%; 
-    padding: 6px 2px;
+    padding: 6px 4px;
     display: inline-flex;
 
 }
@@ -192,6 +192,10 @@ section {
     margin: 6px;
     border-radius: 9px;
     padding: 10px 20px;
+}
+.p-ofo{
+    text-align: center;
+    padding: 2px;
 }
 
     /* Styles for the overlay */

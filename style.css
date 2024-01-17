@@ -193,3 +193,97 @@ section {
     border-radius: 9px;
     padding: 10px 20px;
 }
+
+    /* Styles for the overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(60, 151, 170, 0.437); /* Semi-transparent black overlay */
+        justify-content: center;
+        align-items: center;
+        animation: fadeInOverlay  2.5s ease forwards;
+      }
+  
+      /* Styles for the popup box */
+      .popup {
+        background: #fff; /* White background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        text-align: center;
+        animation: slideInPopup   2.5s ease forwards;
+      }
+  
+  @keyframes fadeInOverlay {
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity: 10;
+      }
+  }
+  
+  @keyframes slideInPopup {
+      from{
+          transform: translateY(-50px);
+          opacity: 0;
+      }
+      to{
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+      /* Close button style */
+      .close-btn {
+        cursor: pointer;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold; 
+        padding: 0px 4px;
+        border: 2px solid #333;
+        border-radius: 20%;
+        transition: color 0.3s ease;
+        display: inline;
+        animation: rotateOutCloseBtn 0.5s ease forwards; /* Animation for close button */
+      }
+  
+      @keyframes fadeOutPopup {
+          from{
+              opacity: 10;
+          }
+          to{
+              opacity: 0;
+              transform: translateY(-50px);
+          } 
+      }
+  
+      @keyframes slideOutPopup {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+      }
+  
+      .close-btn:hover{
+          color: #ffffff;
+          background-color: #000000;
+      }
+  
+      
+      @keyframes rotateOutCloseBtn {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(180deg); /* Rotate by 180 degrees on click */
+        }
+      }

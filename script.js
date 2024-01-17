@@ -32,5 +32,30 @@ function changeActive(element) {
     // Add 'active' class to the clicked link
     element.classList.add('active');}
 
+  // Function to open the popup
+  function openPopup() {
+        document.getElementById('overlay').style.display = 'flex';
+      }
 
+      // Function to close the popup with animation
+  function closePopup() {
+      var overlay = document.getElementById('overlay');
+      var popup = document.querySelector('.popup'); // Corrected selector
+      var closeBtn = document.querySelector('.close-btn');
+
+      // Add class to trigger the fadeOutPopup animation
+      overlay.classList.add('fadeOutPopup');
+      popup.classList.add('slideOutPopup');
+
+      closeBtn.classList.add('rotateOutCloseBtn');
+
+      // Wait for the animation to complete before hiding the overlay
+      setTimeout(function() {
+        overlay.style.display = 'none';
+        // Remove the fadeOutPopup class to allow re-opening the popup
+        overlay.classList.remove('fadeOutPopup');
+        popup.classList.remove('slideOutPopup');
+        closeBtn.classList.remove('rotateOutCloseBtn');
+      }, 500); // 500ms is the duration of the fadeOutPopup animation
+      }
 

@@ -209,8 +209,9 @@ section {
 }
 .p-ofo{
     text-align: center;
-    padding: 1px;
     font-size: medium;
+    margin: 4px;
+    padding: 2em;
 }
 .w-shinn{
     justify-content: center;

@@ -161,6 +161,13 @@ section {
     margin: 6px;
     border-radius: 9px;
 }
+.H-shinn{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(188, 223, 223);
+    margin: 6px;
+    border-radius: 9px;
+}
 
 .dresscode1{
     max-width: 20%; 
@@ -195,7 +202,15 @@ section {
 }
 .p-ofo{
     text-align: center;
-    padding: 2px;
+    padding: 1px;
+}
+.w-shinn{
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(183, 193, 197);
+    margin: 6px;
+    padding: 8px;
+    border-radius: 9px; 
 }
 
     /* Styles for the overlay */

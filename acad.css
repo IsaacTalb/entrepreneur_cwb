@@ -1,0 +1,30 @@
+.sc_one{
+    margin: 0;
+    padding: 21px;
+    background-color: #e3edef7d;
+    border-radius: 20px;
+    transition: background-color 2s ease;
+    align-items:center;
+}
+.sc_one:hover{
+    background-color: #bdbdbddb;
+    color: #120f0f;
+}
+.google-form-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.google-form-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ddddddfc;
+    scrollbar-color: blue;
+    scrollbar-width: thin;
+}

@@ -1,9 +1,11 @@
 function changeBodySection(section) {
     // Hide all sections
-    document.getElementById('one4one').classList.add('hidden');
-    document.getElementById('phoomyat').classList.add('hidden');
-    document.getElementById('minishin').classList.add('hidden');
-    document.getElementById('t-home').classList.add('hidden');
+    document.getElementById('academycafe').classList.add('hidden');
+    document.getElementById('entreprenuers').classList.add('hidden');
+    document.getElementById('foodproduct').classList.add('hidden');
+    document.getElementById('livelihood').classList.add('hidden');
+    document.getElementById('communitycollege').classList.add('hidden');
+    document.getElementById('environmental').classList.add('hidden');
     document.getElementById('hidden_homepage').classList.add('hidden');
     
     
@@ -32,12 +34,11 @@ function changeActive(element) {
     // Add 'active' class to the clicked link
     element.classList.add('active');}
 
-  // Function to open the popup
+  // Pop up for One4One
   function openPopup() {
         document.getElementById('overlay').style.display = 'flex';
       }
 
-      // Function to close the popup with animation
   function closePopup() {
       var overlay = document.getElementById('overlay');
       var popup = document.querySelector('.popup'); // Corrected selector
@@ -58,4 +59,59 @@ function changeActive(element) {
         closeBtn.classList.remove('rotateOutCloseBtn');
       }, 500); // 500ms is the duration of the fadeOutPopup animation
       }
+
+      // Popup for Phoo Myat
+    function openPopup_PM() {
+      document.getElementById('overlay_PM').style.display = 'flex';
+      }
+  
+  
+      function closePopup_PM() {
+      var overlay_PM = document.getElementById('overlay_PM');
+      var popup_PM = document.querySelector('.popup_PM'); // Corrected selector
+      var closeBtn_PM = document.querySelector('.close-btn_PM');
+  
+      // Add class to trigger the fadeOutPopup animation
+      overlay_PM.classList.add('fadeOutPopup');
+      popup_PM.classList.add('slideOutPopup');
+  
+      closeBtn_PM.classList.add('rotateOutCloseBtn');
+  
+      // Wait for the animation to complete before hiding the overlay
+      setTimeout(function() {
+      overlay_PM.style.display = 'none';
+      // Remove the fadeOutPopup class to allow re-opening the popup
+      overlay_PM.classList.remove('fadeOutPopup');
+      popup_PM.classList.remove('slideOutPopup');
+      closeBtn_PM.classList.remove('rotateOutCloseBtn');
+      }, 500); // 500ms is the duration of the fadeOutPopup animation
+      }
+  
+      // Popup for Minishin
+      function openPopup_MS() {
+      document.getElementById('overlay_MS').style.display = 'flex';
+      }
+  
+  
+      function closePopup_MS() {
+      var overlay_MS = document.getElementById('overlay_MS');
+      var popup_MS = document.querySelector('.popup_MS'); // Corrected selector
+      var closeBtn_MS = document.querySelector('.close-btn_MS');
+  
+      // Add class to trigger the fadeOutPopup animation
+      overlay_MS.classList.add('fadeOutPopup');
+      popup_MS.classList.add('slideOutPopup');
+  
+      closeBtn_MS.classList.add('rotateOutCloseBtn');
+  
+      // Wait for the animation to complete before hiding the overlay
+      setTimeout(function() {
+      overlay_MS.style.display = 'none';
+      // Remove the fadeOutPopup class to allow re-opening the popup
+      overlay_MS.classList.remove('fadeOutPopup');
+      popup_MS.classList.remove('slideOutPopup');
+      closeBtn_MS.classList.remove('rotateOutCloseBtn');
+      }, 500); // 500ms is the duration of the fadeOutPopup animation
+      }
+  
 
